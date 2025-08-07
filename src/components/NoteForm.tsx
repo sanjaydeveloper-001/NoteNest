@@ -13,16 +13,16 @@ function NoteForm() {
         setLoading (true);
         if(!note.trim()){ 
             alert("Fill the box!"); 
-            setLoading(false);
         }
         else{
             await addDoc(collection(db, "notes"),{
                 content:note,
                 createdAr:serverTimestamp()
             })
-            setNote("");
-            setLoading(false);
+            
         }
+        setNote("");
+        setLoading(false);
 
     }
 

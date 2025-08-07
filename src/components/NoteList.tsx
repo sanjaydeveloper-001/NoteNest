@@ -37,10 +37,10 @@ function NoteList() {
 
 
   return (
-    <div className={`grid grid-4 mt-4 ${notes.length ===1 ? "grid-cols-1" : "grid-cols-1 md:grid-cols-2"}`} >
+    <div className={`grid grid-4 mt-4 ${notes.length ===1 ? "grid-cols-1" : "grid-cols-1 md:grid-cols-2"} space-x-4`} >
         {
           notes.map((note)=> (
-            <div key={note.id} className="mt-5 p-5 border border-gray-200 rounded-xl shadow-md bg-white hover:shadow-lg transition-all duration-200 flex justify-between items-center " >
+            <div key={note.id} className="mt-5 p-5 border border-gray-200 rounded-xl shadow-md bg-white hover:shadow-lg transition-all duration-200 flex justify-between items-center gap-2" >
               <p>{note.content}</p>
               <Button 
                 variant="destructive"

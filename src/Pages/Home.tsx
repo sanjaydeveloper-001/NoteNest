@@ -3,7 +3,7 @@ import NoteList from "@/components/NoteList";
 
 function Home() {
   return (
-    <div className="w-[380px] flex flex-col items-center justify-center py-8 border rounded max-w-screen-sm mx-auto px-10">
+    <div className="w-max flex flex-col items-center justify-center py-8 border rounded max-w-screen-sm mx-auto px-10">
       <div 
       className="w-full"
       >
